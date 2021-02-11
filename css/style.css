@@ -91,6 +91,7 @@ body {
 }
 .product__big-image-box {
   position: sticky;
+  top: 4px;
 }
 .product__big-image {
   max-height: 405px;
@@ -118,4 +119,8 @@ body {
   line-height: 32px;
   word-break: break-word;
   font-weight: 400;
+}
+
+.descripition {
+  list-style-position: inside;
 }
