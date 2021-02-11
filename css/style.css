@@ -4,6 +4,21 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  color: #0f1111;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Amazon Ember", Arial, sans-serif;
+}
+
 /* colors */
 .--bg-color-131921 {
   background-color: var(--color-131921);
@@ -11,6 +26,19 @@
 
 .--bg-color-232f3e {
   background-color: var(--color-232f3e);
+}
+
+.--text-color-565959 {
+  color: var(--color-565959);
+}
+
+/* sections */
+.section {
+  border-top: var(--color-cccccc) solid 1px;
+}
+
+.section--no-border {
+  border: 0;
 }
 
 /* nav */
@@ -36,4 +64,35 @@
 .breadcrumbs {
   padding: 0 16px;
   margin-top: 8px;
+}
+
+.breadcrumbs__link,
+.breadcrumbs__arrow {
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+/* product section */
+.product__big-image-box {
+  position: relative;
+}
+.product__big-image {
+  max-height: 405px;
+  max-width: 405px;
+}
+
+.product__big-image-box::after {
+  content: "Roll over image to zoom in";
+  text-align: center;
+  color: var(--color-565959);
+  width: 100%;
+  min-height: 20px;
+  transition: 0s;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.product__big-image-box:hover::after {
+  content: "Click image to open extended view";
 }
