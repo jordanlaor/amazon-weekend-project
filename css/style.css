@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* colors */
+.--bg-color-131921 {
+  background-color: var(--color-131921);
+}
+
+.--bg-color-232f3e {
+  background-color: var(--color-232f3e);
+}
+
+/* nav */
+.nav {
+  min-width: 1000px;
+}
+
+.nav__top {
+  height: 60px;
+}
+.nav__top-logo {
+  background-image: url("../images/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png");
+  background-position: -10px -51px;
+  width: 97px;
+  height: 30px;
+}
+
+.nav__bottom {
+  height: 39px;
+}
