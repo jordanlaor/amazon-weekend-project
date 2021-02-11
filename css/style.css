@@ -34,4 +34,6 @@
 
 /* breadcrumbs */
 .breadcrumbs {
+  padding: 0 16px;
+  margin-top: 8px;
 }
