@@ -6,6 +6,9 @@
 
 a {
   text-decoration: none;
+  color: var(--color-007185);
+  font-size: 14px;
+  line-height: 20px;
 }
 
 a:hover {
@@ -30,6 +33,14 @@ body {
 
 .--text-color-565959 {
   color: var(--color-565959);
+}
+
+/* page */
+.page {
+  margin-top: 20px;
+  min-width: 996px;
+  padding: 0 18px 18px;
+  margin: 0 auto;
 }
 
 /* sections */
@@ -73,8 +84,13 @@ body {
 }
 
 /* product section */
+.section__product {
+  display: grid;
+  grid-template-columns: 45% auto;
+  margin-right: 270px;
+}
 .product__big-image-box {
-  position: relative;
+  position: sticky;
 }
 .product__big-image {
   max-height: 405px;
@@ -95,4 +111,11 @@ body {
 
 .product__big-image-box:hover::after {
   content: "Click image to open extended view";
+}
+
+.product__h1 {
+  font-size: 24px;
+  line-height: 32px;
+  word-break: break-word;
+  font-weight: 400;
 }
