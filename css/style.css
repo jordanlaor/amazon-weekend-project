@@ -86,8 +86,9 @@ body {
 /* product section */
 .section__product {
   display: grid;
-  grid-template-columns: 45% auto;
-  margin-right: 270px;
+  grid-template-columns: minmax(max-content, 45%) minmax(245.75px, auto) 270px;
+  width: 100%;
+  column-gap: 20px;
 }
 
 .product__big-image-box {
