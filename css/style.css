@@ -89,10 +89,12 @@ body {
   grid-template-columns: 45% auto;
   margin-right: 270px;
 }
+
 .product__big-image-box {
   position: sticky;
   top: 4px;
 }
+
 .product__big-image {
   max-height: 405px;
   max-width: 405px;
