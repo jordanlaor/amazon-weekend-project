@@ -52,6 +52,10 @@ body {
   color: var(--color-007600);
 }
 
+.--text-color-555555 {
+  color: var(--color-555555);
+}
+
 /* page */
 .page {
   margin-top: 20px;
@@ -301,6 +305,72 @@ body {
 .product__coupon-checkbox {
   vertical-align: middle;
   margin-left: 1px;
+}
+
+.product__color-container {
+  width: 171px;
+  display: grid;
+  grid-template-areas:
+    "color-box color-box color-box"
+    "color-mandala color-petal color-purple";
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.product__color-box {
+  padding-left: 2px;
+  padding-bottom: 2px;
+  grid-area: color-box;
+}
+
+.product__color-box::after {
+  content: "Mandala";
+  font-weight: 700;
+  margin-left: 3px;
+  transition: 1ms;
+}
+
+.product__color-mandala:hover ~ .product__color-box::after {
+  content: "Mandala";
+}
+
+.product__color-petal:hover ~ .product__color-box::after {
+  content: "Petal";
+}
+
+.product__color-purple:hover ~ .product__color-box::after {
+  content: "Purple-blue Omber";
+}
+
+.product__color-card {
+  height: 36px;
+  width: 36px;
+  border-radius: 2px;
+  margin: 6px 4px 0;
+  cursor: pointer;
+  border-color: #adb1b8 #a2a6ac #8d9096;
+  border-style: solid;
+  border-width: 1px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.product__color-mandala {
+  border-color: var(--color-e77600);
+  border-style: solid;
+  border-width: 1px;
+  background-image: url("../images/product-color-mandala.jpg");
+  grid-area: color-mandala;
+}
+
+.product__color-petal {
+  background-image: url("../images/product-color-petal.jpg");
+  grid-area: color-petal;
+}
+
+.product__color-purple {
+  background-image: url("../images/product-color-purple.jpg");
+  grid-area: color-purple;
 }
 
 .product__descripition {
