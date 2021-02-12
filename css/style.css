@@ -126,11 +126,16 @@ body {
   column-gap: 20px;
 }
 
+.product__image-section-wrapper {
+  position: sticky;
+  top: 4px;
+  height: max-content;
+  margin-bottom: 20px;
+}
+
 .product__image-section {
   display: grid;
   grid-template-columns: max-content auto;
-  position: sticky;
-  top: 4px;
   height: max-content;
 }
 
