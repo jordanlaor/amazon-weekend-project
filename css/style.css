@@ -75,6 +75,14 @@ body {
   border: 0;
 }
 
+.section__header {
+  color: var(--color-cc6600);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;
+  padding-bottom: 4px;
+}
+
 /* nav */
 .nav {
   min-width: 1000px;
@@ -376,3 +384,5 @@ body {
 .product__descripition {
   list-style-position: inside;
 }
+
+/* frequently section */
