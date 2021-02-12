@@ -44,6 +44,14 @@ body {
   color: var(--color-ffffff);
 }
 
+.--text-color-b12704 {
+  color: var(--color-b12704);
+}
+
+.--text-color-007600 {
+  color: var(--color-007600);
+}
+
 /* page */
 .page {
   margin-top: 20px;
@@ -241,16 +249,27 @@ body {
   margin-left: 5px;
 }
 
-.product__price-box-title {
-  text-align: right;
+.product__price-box {
+  display: grid;
+  grid-template-columns: max-content auto;
 }
 
+.product__price-box-title {
+  text-align: right;
+  padding-right: 3px;
+}
+
+.product__price {
+  font-size: 18px;
+  line-height: 24px;
+}
 .product__coupon-tag {
   font-weight: 700;
   font-size: 11px;
   line-height: 1.05;
   padding: 4px 5px 4px 6px;
   border-radius: 3px 0 0 3px;
+  vertical-align: middle;
   position: relative;
   top: -1px;
   display: inline-block;
@@ -277,6 +296,11 @@ body {
   border-top: 10px solid var(--color-e47911);
   border-bottom: 6px dashed transparent;
   top: 0;
+}
+
+.product__coupon-checkbox {
+  vertical-align: middle;
+  margin-left: 1px;
 }
 
 .product__descripition {
