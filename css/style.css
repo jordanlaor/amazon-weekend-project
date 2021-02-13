@@ -27,6 +27,10 @@ body {
   display: flex;
 }
 
+.--font-weight-700 {
+  font-weight: 700;
+}
+
 /* colors */
 .--bg-color-131921 {
   background-color: var(--color-131921);
@@ -674,6 +678,12 @@ body {
 }
 
 /* frequently section */
+.section__frequently,
+.section__related {
+  margin-top: 20px;
+  padding: 0 18px 18px;
+}
+
 .frequently__items-box {
   display: flex;
 }
