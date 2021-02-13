@@ -36,6 +36,9 @@ body {
   background-color: var(--color-232f3e);
 }
 
+.--bg-color-febd69 {
+  background-color: var(--color-febd69);
+}
 .--text-color-565959 {
   color: var(--color-565959);
 }
@@ -54,6 +57,10 @@ body {
 
 .--text-color-555555 {
   color: var(--color-555555);
+}
+
+.--text-color-111111 {
+  color: var(--color-111111);
 }
 
 /* page */
@@ -140,9 +147,6 @@ body {
   flex-flow: column nowrap;
 }
 
-.nav__top-location-line {
-}
-
 .nav__top-location-link:hover {
   color: unset;
   text-decoration: none;
@@ -171,9 +175,11 @@ body {
   flex: 1 1 auto;
   border-radius: 4px 4px 4px 4px;
   width: auto;
+  box-shadow: none;
+  text-indent: 8px;
 }
 
-.nav__top-input-box {
+.nav__top-inputbox {
   display: flex;
   flex: 1 1 0;
   height: 40px;
@@ -189,42 +195,51 @@ body {
   border-radius: 4px 0 0 4px;
   padding-left: 5px;
   position: relative;
-}
-
-.nav__top-dropdown-menu {
-  width: auto;
-  display: block;
   white-space: nowrap;
   text-overflow: ellipsis;
   color: var(--color-555555);
   font-size: 12px;
   line-height: 33px;
-  margin-right: 21px;
   margin-left: 5px;
   min-width: 19px;
-  position: absolute;
-  left: 0;
-  height: 100%;
   cursor: pointer;
-  border: 0;
   line-height: 35px;
-  border-radius: 4px 4px 4px 4px;
-  background-color: var(--color-f3f3f3);
 }
 
-.nav__top-dropdown-arrow {
-  position: absolute;
-  top: 14px;
-  right: 8px;
-  border-style: solid;
-  border-width: 4px;
-  border-color: transparent;
-  border-top: 4px solid var(--color-666666);
-  border-bottom-width: 0;
-  width: 0;
-  height: 0;
-  font-size: 0;
-  line-height: 0;
+.nav__top-input-field {
+  display: flex;
+  flex: 1 1 0;
+  height: 40px;
+  width: auto;
+  border: none;
+  border-top: 1px solid transparent;
+  width: 100%;
+  line-height: 15px;
+  padding: 7px 10px 10px 0;
+  font-size: 15px;
+}
+
+.nav__top-input-button {
+  display: flex;
+  width: 45px;
+  height: 40px;
+  z-index: 2;
+  border: 0;
+  border-radius: 0 4px 4px 0;
+  background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/nav-sprite-global-2x-hm-dsk-reorg._CB405937547_.png);
+  background-size: 350px;
+  background-position: 2px -280px;
+}
+
+.nav__top-input-button:hover {
+  background-color: var(--color-f3a846);
+}
+
+.nav__top-right {
+  height: 60px;
+  display: flex;
+  margin-top: 2px;
+  padding-top: 3px;
 }
 
 .nav__bottom {
