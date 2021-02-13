@@ -674,3 +674,106 @@ body {
 }
 
 /* frequently section */
+.frequently__items-box {
+  display: flex;
+}
+
+.frequently__items-img-box {
+  margin: 12px 25px 12px 0px;
+  display: flex;
+}
+
+.frequently__items-img {
+  margin-right: 10px;
+  width: 116px;
+  height: 116px;
+}
+
+.frequently__items-img-1 {
+  background: url("../images/frequently-1.jpg") no-repeat center center / contain;
+}
+
+.frequently__items-img-2 {
+  background: url("../images/frequently-2.jpg") no-repeat center center / contain;
+}
+
+.frequently__items-plus {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.frequently__bundle-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.frequently-price {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.frequently__btn-box {
+  padding-top: 6px;
+}
+
+.frequently__btn {
+  margin-bottom: 10px;
+  height: 22px;
+  width: 99px;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  box-shadow: 0 1px 0 rgb(255 255 255 / 40%) inset;
+  border-radius: 3px;
+  font-size: 11px;
+  line-height: 20px;
+  padding: 0 6px 0 7px;
+  color: var(--color-111111);
+}
+
+.frequently__btn-cart {
+  background: #f0c14b;
+  border-color: #a88734 #9c7e31 #846a29;
+  background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+}
+
+.frequently__btn-list {
+  background: linear-gradient(to bottom, #f7f8fa, #e7e9ec);
+  border-color: #adb1b8 #a2a6ac #8d9096;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+}
+
+.frequently__info-line {
+  padding-bottom: 10px;
+  min-height: 20px;
+  display: grid;
+  grid-template-columns: 28px auto;
+  position: relative;
+}
+
+.frequently__info-icon {
+  background-image: url("../images/qgGRgelkhXwysfn.png");
+  background-position: -412px -29px;
+  background-size: 512px 256px;
+  background-repeat: no-repeat;
+  height: 18px;
+  width: 18px;
+  position: absolute;
+  left: 2px;
+  top: -1px;
+}
+
+.frequently__info-text,
+.frequently__info-text-link {
+  font-size: 12px;
+  line-height: 16px;
+  grid-column: 2;
+}
