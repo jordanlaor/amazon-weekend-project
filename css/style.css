@@ -31,6 +31,13 @@ body {
   font-weight: 700;
 }
 
+.sponsored {
+  margin-bottom: 4px;
+  line-height: 23px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
 /* colors */
 .--bg-color-131921 {
   background-color: var(--color-131921);
@@ -680,8 +687,7 @@ body {
 /* frequently section */
 .section__frequently,
 .section__related {
-  margin-top: 20px;
-  padding: 0 18px 18px;
+  padding: 20px 18px 18px;
 }
 
 .frequently__items-box {
@@ -786,4 +792,12 @@ body {
   font-size: 12px;
   line-height: 16px;
   grid-column: 2;
+}
+
+/* related section */
+.related__header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: space-between;
 }
