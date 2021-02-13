@@ -49,6 +49,16 @@ body {
   vertical-align: middle;
 }
 
+.hamburger {
+    width: 17px;
+  height: 14px;
+  background-position: -172px -255px;
+  background-image: url("../images/nav-sprite-global-2x-hm-dsk-reorg._CB405937547_.png");
+    background-size: 350px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
 /* colors */
 .--bg-color-131921 {
   background-color: var(--color-131921);
@@ -375,6 +385,33 @@ body {
 
 .nav__bottom {
   height: 39px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto max-content;
+}
+
+.nav__bottom-link {
+  margin: 5px 0 6px 0;
+  padding: 8px 9px;
+  height: 12px;
+  color: var(--color-ffffff);
+  line-height: 15px;
+  display: inline-block;
+  grid-auto-columns: max-content;
+  align-items: center;
+  width: fit-content;
+  height: auto;
+  border: none;
+  text-decoration: none;
+}
+
+.nav__bottom-link:hover {
+  color: var(--color-ffffff);
+}
+}
+
+.nav__bottom-left {
+  display: flex;
 }
 
 /* breadcrumbs */
