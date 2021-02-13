@@ -514,6 +514,16 @@ body {
   background-position: -35px -60px;
 }
 
+.side__secure {
+  display: flex;
+  align-items: center;
+}
+
+.side__lock {
+  height: 15px;
+  margin-right: 5px;
+}
+
 /* product section */
 .section__product {
   display: grid;
